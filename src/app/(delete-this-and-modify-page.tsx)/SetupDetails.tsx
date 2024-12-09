@@ -14,8 +14,8 @@ interface Plugin {
 }
 
 const FEATURES: Feature[] = [
-    { name: 'Next.js 15 Stable' },
-    { name: 'React 19 RC' },
+    { name: 'Next.js 15' },
+    { name: 'React 19' },
     { name: 'Typescript 5' },
     {
         name: 'ESLint 9'
@@ -24,7 +24,7 @@ const FEATURES: Feature[] = [
     { name: 'App Directory' },
     { name: 'System, Light & Dark Mode' },
     { name: 'Next Bundle Analyzer' },
-    { name: 'Dockerfile using Node 20.18.0 (alpine)' }
+    { name: 'Dockerfile using Node 22.11.0 (alpine)' }
 ];
 
 const ESLINT_PLUGINS: Plugin[] = [
