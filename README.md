@@ -11,7 +11,7 @@ Welcome to the **Next.js 15 Starter** repository! This starter template is built
 ## 🚀 What's Included
 
 - **Next.js 15 (Stable)**
-- **React 19 (RC)**
+- **React 19 (Stable)**
 - **TypeScript 5**
 - **ESLint 9**
 - **Prettier 3**
