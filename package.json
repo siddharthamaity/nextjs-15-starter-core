@@ -1,7 +1,7 @@
 {
     "name": "nextjs-15-starter-core",
     "version": "1.0.0",
-    "private": true,
+    "private": false,
     "website": "https://nextjs-15-starter-core-core.vercel.app/",
     "license": "MIT",
     "scripts": {
