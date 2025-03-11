@@ -23,7 +23,7 @@
         "@next/bundle-analyzer": "^15.2.1",
         "@next/eslint-plugin-next": "^15.2.1",
         "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-        "@types/node": "^22.13.9",
+        "@types/node": "^22.13.10",
         "@types/react": "19.0.10",
         "@types/react-dom": "19.0.4",
         "eslint": "^9.21.0",
