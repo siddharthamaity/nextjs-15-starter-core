@@ -19,7 +19,7 @@
         "react-dom": "19.0.0"
     },
     "devDependencies": {
-        "@eslint/js": "^9.22.0",
+        "@eslint/js": "^9.23.0",
         "@next/bundle-analyzer": "^15.2.3",
         "@next/eslint-plugin-next": "^15.2.3",
         "@trivago/prettier-plugin-sort-imports": "^5.2.2",
