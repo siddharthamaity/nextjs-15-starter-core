@@ -24,7 +24,7 @@ const FEATURES: Feature[] = [
     { name: 'App Directory' },
     { name: 'System, Light & Dark Mode' },
     { name: 'Next Bundle Analyzer' },
-    { name: 'Dockerfile using Node 22.14.0 (alpine)' }
+    { name: 'Dockerfile using Node 22.14.0 & Bun 1.2.7 (alpine)' }
 ];
 
 const ESLINT_PLUGINS: Plugin[] = [
