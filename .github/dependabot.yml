@@ -15,11 +15,21 @@ updates:
       directory: '/'
       schedule:
           interval: monthly
+
     - package-ecosystem: 'docker'
       directory: '/'
       schedule:
           interval: monthly
+
     - package-ecosystem: 'npm'
       directory: '/'
       schedule:
           interval: weekly
+      allow:
+          - dependency-type: 'direct'
+      commit-message:
+          prefix: 'chore'
+          include: 'scope'
+      labels:
+          - 'dependencies'
+      # No ignore block here → major updates will be opened, just not auto-merged
