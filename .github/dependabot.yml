@@ -14,22 +14,12 @@ updates:
     - package-ecosystem: 'devcontainers'
       directory: '/'
       schedule:
-          interval: weekly
-
+          interval: monthly
     - package-ecosystem: 'docker'
       directory: '/'
       schedule:
-          interval: weekly
-
+          interval: monthly
     - package-ecosystem: 'npm'
       directory: '/'
       schedule:
-          interval: daily
-      allow:
-          - dependency-type: 'direct'
-      commit-message:
-          prefix: 'chore'
-          include: 'scope'
-      labels:
-          - 'dependencies'
-      # No ignore block here → major updates will be opened, just not auto-merged
+          interval: weekly
