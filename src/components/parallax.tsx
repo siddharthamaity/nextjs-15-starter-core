@@ -35,7 +35,7 @@ export function Parallax() {
 
       tl.to(shape2.current, { y: "-=50" }, 0)
         .to(shape1.current, { y: "-=50" }, 0)
-        .to(citysky1.current, { y: "-=50" }, 0)
+        .to(citysky1.current, { y: "+=10" }, 0)
         .to(citysky2.current, { y: "+=1000" }, 0)
         .to(citysky3.current, { y: "+=1000" }, 0)
         .to(copy.current, { y: "-250%", opacity: 1 }, 0);
