@@ -42,7 +42,7 @@ export function Hero() {
           scrollSnapAlign: "start",
           position: "relative",
           width: "100%",
-          overflow: "hidden",
+          
         }}
       >
         <video
@@ -89,7 +89,6 @@ export function Hero() {
         style={{
           height: "100vh",
           scrollSnapAlign: "start",
-          overflowY: "auto",
           padding: "100px 20px",
           display: "flex",
           flexDirection: "column",
@@ -122,7 +121,6 @@ export function Hero() {
                 width: "400px",
                 height: "550px",
                 borderRadius: "16px",
-                overflow: "hidden",
                 display: "flex",
                 flexDirection: "column",
               }}

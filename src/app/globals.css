@@ -17,13 +17,99 @@ html,
 body {
     max-width: 100vw;
     overflow-x: hidden;
-    overflow-y: hidden;
+    
 }
 
 body {
     background-color: var(--background);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.parallax-outer {
+    overflow: hidden;
+    height: 100%
+}
+
+.parallax{
+    height: 110vh;
+    width: 100%;
+    position: relative;
+}
+
+.parallax img{
+    position: absolute;
+}
+
+
+.shape1, 
+.shape2{
+    width: 100%;
+    bottom: 0;
+}
+
+.shape1{
+    top: 80%;
+    z-index: 4;
+}
+.shape2{
+    bottom: 5%;
+    z-index: 3;
+}
+.shape3{
+    top: 71%;
+    z-index: 4;
+}
+
+.citsky1{
+    left: 31%;
+    top: 50%;
+    width: 60%;
+    transform: translate(-50%,-50%);
+}
+.citsky2{
+    top: 40%;
+    left: 50%;
+    width: 60%;
+}
+.citsky3{
+    top: 45%;
+    left: 00%;
+    width: 60%;
+}
+
+.copy{
+    position :absolute;
+    bottom: 0%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    z-index: 0;
+    opacity: 0;
+
+}
+
+.copy h1{
+    font-size: 3rem;
+}
+
+.about{
+    padding-left: 10%;
+    padding-bottom: 20%;
+}
+
+.about h2{
+    color: #0a0a0a;
+    font-size: 2rem;
+
+}
+
+.about p{
+    margin-top: 20px;
+    width: 100%;
 }
 
 * {
