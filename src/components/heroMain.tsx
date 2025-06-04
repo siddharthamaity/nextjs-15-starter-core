@@ -201,10 +201,10 @@ export function Hero() {
         }}
       >
         {/* Description */}
-        <div style={{ flex: "1 1 30%", minWidth: "300px" ,backgroundColor : "#FAFFCA", borderRadius: "20px", padding: "20px", height: "600px", }}>
-          <h2 style={{ paddingBottom: "20px" }}>About Ecostudy 🌳</h2>
-          <h3 style={{ paddingBottom: "40px" }}>Exploring Sustainable Development in Malaysia</h3>
-          <p>
+        <div style={{ flex: "1 1 30%", minWidth: "300px" ,backgroundColor : "#FAFFCA", borderRadius: "20px", padding: "20px", height: "600px" }}>
+          <h2 style={{ paddingBottom: "20px", color:"#000" }}>About Ecostudy 🌳</h2>
+          <h3 style={{ paddingBottom: "40px", color:"#000" }}>Exploring Sustainable Development in Malaysia</h3>
+          <p style={{color:"#000"}}>
             EcoStudy is a collaborative platform dedicated to<br/>
              investigating sustainable development and environmental <br/>
             monitoring in Malaysia through technological and managerial<br/>
