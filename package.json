@@ -19,14 +19,14 @@
         "react-dom": "^19.1.0"
     },
     "devDependencies": {
-        "@eslint/js": "^9.27.0",
+        "@eslint/js": "^9.28.0",
         "@next/bundle-analyzer": "^15.3.3",
         "@next/eslint-plugin-next": "^15.3.3",
         "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-        "@types/node": "^22.15.26",
+        "@types/node": "^22.15.29",
         "@types/react": "^19.1.6",
-        "@types/react-dom": "^19.1.5",
-        "eslint": "^9.27.0",
+        "@types/react-dom": "^19.1.6",
+        "eslint": "^9.28.0",
         "eslint-config-next": "^15.3.3",
         "eslint-config-prettier": "^10.1.5",
         "eslint-plugin-import": "^2.31.0",
@@ -36,6 +36,6 @@
         "postcss": "^8.5.4",
         "prettier": "^3.5.3",
         "typescript": "^5.8.3",
-        "typescript-eslint": "^8.33.0"
+        "typescript-eslint": "^8.33.1"
     }
 }
