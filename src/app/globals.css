@@ -1,6 +1,9 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -51,14 +54,20 @@ body {
 .shape1{
     top: 80%;
     z-index: 4;
+    width: 100%;
 }
 .shape2{
     bottom: 5%;
     z-index: 3;
 }
 .shape3{
-    top: 71%;
-    z-index: 4;
+    top: 75%;
+    z-index: 3;
+    width: 100%;
+    width: 100%;
+    bottom: 0;
+    right: 10%
+    
 }
 
 .citsky1{
@@ -89,6 +98,7 @@ body {
     flex-direction: column;
     z-index: 0;
     opacity: 0;
+    color: #FFFF;
 
 }
 
@@ -110,6 +120,173 @@ body {
 .about p{
     margin-top: 20px;
     width: 100%;
+}
+
+.card-container{
+    padding: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-content: space-between;
+    
+    
+}
+
+.description-card {
+  flex: 1;
+  color: white;
+  z-index: 2;
+  
+  /* border: 1px solid red; */
+}
+
+.description-card h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 50px;
+  bottom: 0%;
+  opacity: 0;
+  
+}
+
+.parent-cardies {
+  display: flex;
+  gap: 20px;
+}
+
+.cardies1,
+.cardies2,
+.cardies3{
+  /* background-color: rgba(255, 255, 255, 0.05); */
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  text-align: start;
+}
+
+.cardies1{
+    width: 30%;
+    opacity: 0;
+}
+
+.cardies2{
+    border-left:2px solid red;
+    width: 60%;
+    opacity: 0;
+    background: #0000004e;
+}
+.cardies3{
+    width: 20%;
+    opacity: 0;
+}
+
+
+.image-card {
+  flex: 1;
+  position: relative;
+}
+
+.image-card img {
+  width: 100%;
+  max-width: 5000px;
+  border-radius: 10px;
+  object-fit: cover;
+  left: 600px;
+  top: 300px;
+  display: block;
+  height: auto;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  
+}
+
+/* .image-card::before {
+  content: "";
+  position: absolute;
+  bottom: -590px;
+  left: 400px;
+  width: 250px;
+  height: 250px;
+  background-color: rgba(94, 255, 0, 0.683);
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  mix-blend-mode: multiply;
+} */
+
+.parent-card{
+    margin-top: 100px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    text-align: start;
+    
+}
+
+.card{
+    border-radius: 40px;
+    height: 100px;
+    width: 200px;
+    /* transition: transform 0.5s ease-in-out;     */
+    opacity: 0;
+}
+
+.stars{
+    opacity: 0%;
+    transform: translate(-50%,-50%);
+    left: 900px;
+    top: 400px;
+}
+
+.cloud1{
+    opacity: 100%;
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.cloud2{
+    opacity: 100%;
+    /* transform: translate(-50%,-50%); */
+    z-index: 1;
+    right: 30%;
+    bottom: -57%;
+    /* left: 80%; */
+}
+
+.city{
+    top: 500px;
+    z-index: 0;
+    transform: translate(-50%,-50%);
+    left: 1000px;
+}
+
+
+.card img{
+    width: 100px;
+    margin-bottom: 30px;
+    
+
+}
+
+.card h2{
+    text-align: start;
+    font-weight:100;
+}
+
+.card h1{
+    text-align: start;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #FFFF;
+    transition: color 1s;
+}
+
+.card h1:hover{
+    color: #a6a6a6;
 }
 
 * {

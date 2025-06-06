@@ -45,7 +45,7 @@ export function Parallax() {
   }, []);
 
   return (
-    <div className="parallax-outer">
+    <section className="parallax-outer">
       <div 
         ref={parallaxRef} 
         className="parallax" 
@@ -58,11 +58,13 @@ export function Parallax() {
         <img ref={citysky1} className="citsky1" src="images/Parallax/City_Skyline.png" alt="City Skyline 1" />
         <img ref={shape1} className="shape1" src="images/Parallax/Shape.png" alt="Shape 1" />
         <img ref={shape2} className="shape2" src="/images/Parallax/Shape2.png" alt="Shape 2" />
+        {/* <img ref={shape1} className="shape3" src="images/Parallax/Shape.png" alt="Shape 1" /> */}
 
         <div ref={copy} className="copy">
           <h1>Tourism Management and Visitor Satisfaction at Petronas Twin Towers</h1>
         </div>
       </div>
-    </div>
+    </section>
+    
   );
 }
