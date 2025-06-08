@@ -1,0 +1,67 @@
+.heroSection {
+  padding: 80px 20px 40px;
+  text-align: center;
+  position: relative;
+  background-color: #b8c9ac;
+}
+
+.navLeft {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #456145;
+}
+
+.navRight {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+}
+
+.navRight a {
+  color: #456145;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navRight a:hover {
+  color: #2e3d28;
+}
+
+.heroTitle {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.5;
+  margin-top: 60px;
+  padding: 0 10px;
+}
+
+.summarySection {
+  padding: 60px 20px;
+  background-color: #d8e3d1;
+  text-align: center;
+}
+
+.subTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2e3d28;
+  font-weight: 600;
+}
+
+.paragraph {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #354b35;
+  padding: 0 10px;
+}
