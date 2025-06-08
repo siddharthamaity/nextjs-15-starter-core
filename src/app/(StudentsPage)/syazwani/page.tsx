@@ -8,13 +8,8 @@ import { Hero } from "@/components/heroMain";
 const Page = () => {
     return (
         <>
-            <div>
                 <Parallax />
-                <Secparallax />
-
-
-
-            </div>
+                <Secparallax />  
         </>
     );
 };
