@@ -1,0 +1,215 @@
+/* AmirPage.module.css */
+.page {
+  background-color: #b8c9ac;
+  font-family: Arial, sans-serif;
+  color: #000000;
+  min-height: 95vh;
+  overflow-y: auto;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+/* --- HERO SECTION WITH FULL-WIDTH IMAGE AND OVERLAY TITLE --- */
+.titleSection {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.imageWrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.heroImage {
+  object-fit: cover;
+  z-index: 1;
+}
+
+.heroTitle {
+  position: relative;
+  z-index: 2;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  padding: 1rem;
+  max-width: 1000px;
+  line-height: 1;
+  text-shadow: 
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+/* --- NAVIGATION STYLES --- */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+  color: rgb(0, 0, 0);
+  background-color: #92ca6a;
+}
+
+.navLeft {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  z-index: 3; /* Ensure it's above the image */
+}
+
+.navRight {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  display: flex;
+  gap: 3.5rem;
+  font-size: 1.1rem;
+  z-index: 3; /* Ensure it's above the image */
+}
+
+/* --- INTRO SECTION --- */
+.introSection {
+  background-color: #d9e3c6;
+  padding: 4rem 2rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: auto;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  font-size: 1.2rem; /* <-- increase this value as needed */
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mangroveImage {
+  border-radius: 7px;
+  margin-bottom: 1.5rem;
+}
+
+.quizBox {
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;            /* Full width of parent */
+  height: 60px;          /* Make it taller */
+  padding: 1rem;        /* Add inner spacing */
+  border-radius: 10px;    /* Optional: rounded corners */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quizButton {
+  background-color: black;
+  color: #92ca6a;
+  width: 100%;              /* or 100%, or a specific width like 400px */
+  max-width: 500px;        /* prevent it from being too wide on large screens */
+  height: 50px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;       /* vertically center the text */
+}
+
+
+.methodologyTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: auto;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.featureButton {
+  background-color: #92ca6a;
+  padding: 24px 80px; /* Larger padding for a bigger box */
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.4rem; /* Bigger text */
+  text-align: centre;
+  display: inline-block;
+  color: #000000;
+  box-shadow: 0 4px 10px rgb(0, 0, 0); /* Shadow for depth */
+}
+
+/* --- IMPACT SECTION --- */
+.impactSection {
+  background-color: #d9e3c6;
+  padding: 2rem 2rem;
+}
+
+.impactGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .impactGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.impactImage {
+  width: 450px;              /* any fixed size */
+  height: 300px;             /* same as width to make it square */
+  object-fit: cover;         /* ensures image fills the square without distortion */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+
+/* --- FOOTER --- */
+.footer {
+  background-color: #92ca6a;
+  padding: 1.5rem;
+  text-align: auto;
+  font-weight: 600;
+}

@@ -17,7 +17,6 @@ const Page = () => {
                     <Map/>
                 </div>
             </section>            
-        
         </div>
         </>
     );
