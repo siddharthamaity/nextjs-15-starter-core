@@ -1,10 +1,15 @@
-/**
- * The main page component that renders the HomePage component.
- *
- * @returns {JSX.Element} The rendered HomePage component.
- */
+"use client";
+import { Navbar } from "@/components/navbar";
+import { Hero } from "@/components/heroMain";
+
+
 const Page = () => {
-    return <h1>MainPage</h1>;
+    return (
+        <div style={{background: "#B8C9AC" }}>
+            <Navbar />
+            <Hero />
+        </div>
+    );
 };
 
 export default Page;
