@@ -3,6 +3,7 @@
 import { Parallax } from "@/app/(StudentsPage)/syazwani/components/parallax";
 import { Secparallax } from "@/app/(StudentsPage)/syazwani/components/secparallax";
 import { Hero } from "@/components/heroMain";
+import { Map } from "@/components/ui/map";
 
 
 const Page = () => {
@@ -10,7 +11,13 @@ const Page = () => {
         <>
         <div>
             <Parallax/>
-            <Secparallax/>            
+            <Secparallax/>
+            <section className="parallax-outer">
+                <div className="parallax" style={{padding: "60px"}}>
+                    <Map/>
+                </div>
+            </section>            
+        
         </div>
         </>
     );

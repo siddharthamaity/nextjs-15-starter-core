@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Map } from "@/components/ui/map";
 
 export function Secparallax() {
 
@@ -125,6 +126,7 @@ export function Secparallax() {
                         "linear-gradient(180deg,rgba(0, 67, 198, 1) 0%, rgba(1, 22, 69, 1) 100%)",
                 }}
             >
+                
                 <img ref={city} className="city" src="images/Parallax/City_Skyline2.png" alt="City Skyline 2" />
                 <img ref={cloud1} className="cloud1" src="images/Parallax/cloud.png" alt="" />
                 <img ref={cloud2} className="cloud2" src="images/Parallax/cloud.png" alt="" />
@@ -162,6 +164,7 @@ export function Secparallax() {
                     <div className="image-card">
                         <img ref={image} src="images/Parallax/City_Skyline.png" alt="" />
                     </div>
+                    
                 </div>
             </div>
         </section>
