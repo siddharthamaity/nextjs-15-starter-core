@@ -10,10 +10,7 @@ const Page = () => {
         <>
         <div>
             <Parallax/>
-            <Secparallax/>
-            
-            
-            
+            <Secparallax/>            
         </div>
         </>
     );
