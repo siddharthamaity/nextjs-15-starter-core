@@ -56,7 +56,7 @@ function App() {
             {/* Example Card 1 */}
             <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 flex flex-col">
               <img
-                src="/image/grass.jpg" // Updated to use grass.jpg
+                src="/images/grass.jpg" // Updated to use grass.jpg
                 alt="Measuring Soil Compaction"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
@@ -72,7 +72,7 @@ function App() {
             {/* Example Card 2 */}
             <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 flex flex-col">
               <img
-                src="/image/grass.jpg" // Updated to use grass.jpg
+                src="/images/grass.jpg" // Updated to use grass.jpg
                 alt="Tourism Management Impact"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
@@ -122,7 +122,7 @@ function App() {
           {/* Image Block */}
           <div className="flex-1 lg:flex-none w-full lg:w-3/5">
             <img
-              src="/image/grass.jpg" // Updated to use grass.jpg
+              src="/images/grass.jpg" // Updated to use grass.jpg
               alt="Sustainable Development"
               className="w-full h-auto lg:h-[600px] object-cover rounded-2xl shadow-lg"
             />
