@@ -13,6 +13,8 @@ export function Secparallax() {
     const stars = useRef(null);
     const cloud1 = useRef(null);
     const cloud2 = useRef(null);
+    const cloud3 = useRef(null);
+    const cloud4 = useRef(null);
     const image = useRef(null);
     const title = useRef(null);
     const p1 = useRef(null);
@@ -111,6 +113,19 @@ export function Secparallax() {
                     x : "-=1000"
                 },
                 0
+            );tl.to(
+                cloud3.current,
+                {
+                    x : "-=2000"
+                },
+                0
+            );
+            tl.to(
+                cloud4.current,
+                {
+                    x : "-=2000"
+                },
+                0
             );
         })
     })
@@ -131,6 +146,13 @@ export function Secparallax() {
                 <img ref={cloud1} className="cloud1" src="images/Parallax/cloud.png" alt="" />
                 <img ref={cloud2} className="cloud2" src="images/Parallax/cloud.png" alt="" />
                 <img ref={stars} className="stars" src="images/Parallax/stars.png" alt="City Skyline 2" />
+                <img  className="cityfooter" src="images/Parallax/City_Skyline2.png" alt="City Skyline 2" />
+                <img  className="cityfooter-2" src="images/Parallax/City_Skyline2.png" alt="City Skyline 2" />
+                <img ref={cloud3} className="cloud3" src="images/Parallax/cloud.png" alt="" />
+                <img ref={cloud3} className="cloud4" src="images/Parallax/cloud.png" alt="" />
+                <img  className="cloud5" src="images/Parallax/cloud.png" alt="" />
+                
+
                 <div className="card-container">
                     <div className="description-card">
                         <h1 ref={title}>History of KLCC 🏙️</h1>
@@ -166,6 +188,7 @@ export function Secparallax() {
                     </div>
                     
                 </div>
+                
             </div>
         </section>
     );

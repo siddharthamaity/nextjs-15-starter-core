@@ -1,0 +1,49 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+  color: black;
+}
+
+.card {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  /* border-radius: 50%; */
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.nav {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.nav:hover {
+  background-color: #005bb5;
+}

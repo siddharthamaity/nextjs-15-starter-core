@@ -87,6 +87,23 @@ body {
     width: 60%;
 }
 
+.cityfooter{
+    width: 50%;
+    z-index: 1;
+    top: 60%;
+    opacity: 100%;
+    mix-blend-mode: multiply;
+}
+.cityfooter-2{
+    width: 50%;
+    z-index: 1;
+    top: 70%;
+    opacity: 100%;
+    mix-blend-mode: multiply;
+    left: 55%;
+}
+
+
 .copy{
     position :absolute;
     bottom: 0%;
@@ -96,7 +113,7 @@ body {
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    z-index: 0;
+    z-index: -1;
     opacity: 0;
     color: #FFFF;
 
@@ -256,6 +273,26 @@ body {
     bottom: -57%;
     /* left: 80%; */
 }
+.cloud4{
+    opacity: 100%;
+    /* transform: translate(-50%,-50%); */
+    
+    z-index: 1;
+    right: 0%;
+    bottom: -69%;
+    /* left: 80%; */
+}
+
+.cloud5{
+    opacity: 100%;
+    /* transform: translate(-50%,-50%); */
+    /* border: red solid 1px;     */
+    z-index: 1;
+    right: -50%;
+    bottom: -119%;
+    /* left: 80%; */
+}
+
 
 .city{
     top: 500px;
