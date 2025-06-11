@@ -5,6 +5,7 @@ import { Secparallax } from "@/app/(StudentsPage)/syazwani/components/secparalla
 import { Thirdparallax } from "./components/thirdparallax";
 import { Hero } from "@/components/heroMain";
 import { Map } from "@/components/ui/map";
+import OverlapImage from "./components/overlapImage";
 
 
 const Page = () => {
@@ -13,6 +14,7 @@ const Page = () => {
         <div>
             <Parallax/>
             <Secparallax/>
+            {/* <OverlapImage />  */}
             <Thirdparallax/>           
         </div>
         </>

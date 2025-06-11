@@ -19,9 +19,9 @@
         "@radix-ui/react-navigation-menu": "^1.2.13",
         "@radix-ui/react-slot": "^1.2.3",
         "@tailwindcss/postcss": "^4.1.8",
-        
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
+        "embla-carousel-react": "^8.6.0",
         "framer-motion": "^12.16.0",
         "gsap": "^3.13.0",
         "lucide-react": "^0.511.0",

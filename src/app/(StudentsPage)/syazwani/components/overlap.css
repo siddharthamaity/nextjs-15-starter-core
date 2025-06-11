@@ -1,0 +1,14 @@
+.overlap-image-container {
+  position: relative;
+  margin-top: -100px; /* overlaps secparallax's bottom */
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+}
+
+.overlap-image-container img {
+  width: 100%;
+  max-width: 1200px;
+  object-fit: cover;
+  pointer-events: none;
+}

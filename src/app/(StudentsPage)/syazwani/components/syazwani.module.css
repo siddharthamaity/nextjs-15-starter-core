@@ -1,25 +1,107 @@
 .pageContainer {
-  
+  position: relative;
+  height: 120vh;
   margin: 0 auto;
   padding: 30px;
-  font-family: Arial, sans-serif;
   display: flex;
-  /* border : red solid 2px; */
   gap: 40px;
+  background: linear-gradient(180deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  overflow: hidden;
+
+}
+.container{
+  /* border: 1px red solid; */
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+  
+
 }
 
-.pageContainer h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
+
+
+.reviewcard{
+  /* border: 1px white solid; */
+  width: 60%;
+  display: flex;
+  /* justify-content: center; */
+  /* bottom: 90%; */
+  opacity: 0;
+  
 }
 
-.pageContainer h2 {
-  font-size: 22px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+
+
+.elementcontainer{
+  /* border: 1px red solid; */
+  
+  display: flex;
+  
+  
 }
 
-.pageContainer p {
-  font-size: 16px;
-  line-height: 1.6;
+.elementcontainer p{
+  font-size: 0.9rem;
 }
+
+.container h1{
+  color: white;
+  font-size: 3rem;
+}
+.cloud {
+  position: absolute;
+  width: 300px;
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 1;
+  filter: drop-shadow(0 0 20px white);
+}
+
+.cloud1 {
+  top: 10%;
+  left: 5%;
+}
+
+.cloud2 {
+  top: 30%;
+  right: 5%;
+}
+
+
+.backgroundImage {
+  position: absolute;
+  inset: 0; /* shorthand for top, right, bottom, left */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.15; /* optional: fade the background for better readability */
+}
+
+.descriptioncard {
+  /* top: 80%; */
+  border: white 1px solid;
+  border-radius: 28px;
+  background: #ffffff32;
+  width: 60%;
+  padding: 60px;
+  color: white;
+  z-index: 1;
+  box-shadow: 0 0 15px white;
+}
+.mapcard{
+  opacity: 0;
+  gap: 20px;
+}
+
+.mctext{
+  padding-top: 10px;
+  color : white;
+  gap: 20px;
+}
+
+
+

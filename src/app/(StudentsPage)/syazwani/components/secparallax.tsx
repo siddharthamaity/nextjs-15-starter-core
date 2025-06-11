@@ -1,8 +1,9 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Map } from "@/components/ui/map";
+import { Parallax } from "./parallax";
 
 export function Secparallax() {
 
@@ -18,22 +19,30 @@ export function Secparallax() {
     const image = useRef(null);
     const title = useRef(null);
     const p1 = useRef(null);
+    const objective = useRef(null);
     const d1 = useRef(null);
     const d2 = useRef(null);
     const d3 = useRef(null);
+
+    const shapered = useRef(null);
+    const shapeblue = useRef(null);
+    const cityfoot = useRef(null);
+    const cityfoot2 = useRef(null);
 
     useEffect(() => {
         let ctx = gsap.context(() =>{
             gsap.registerPlugin(ScrollTrigger);
             var tl = gsap.timeline({
                 defaults : {duration : 1},
+                
                 scrollTrigger: {
                     trigger: parallaxRef.current,
-                    start: "top top",
-                    end: "+=3000",
+                    start: "top top", // when top of section hits top of screen
+                    end: "+=3000",   
                     scrub: 1,
                     pin: true,
-                    pinSpacing: true,
+                    pinSpacing: false,
+                    
                     
                 },
 
@@ -76,6 +85,15 @@ export function Secparallax() {
                 },
                 0.5
             );
+            tl.to(
+                objective.current,
+                {
+                    opacity: 1,
+                    duration: 0.5,
+                },
+                0.55
+            );
+
             tl.to(
                 d1.current,
                 {
@@ -127,11 +145,46 @@ export function Secparallax() {
                 },
                 0
             );
-        })
-    })
+           
+            tl.to(
+                shapeblue.current,
+                {
+                    y : "-=10"
+                },
+                0
+            );
+            tl.to(
+                shapered.current,
+                {
+                    y : "-=90"
+                },
+                0.99
+            );
+            tl.to(
+                cityfoot.current,
+                {
+                    y : "-=50"
+                },
+                0
+            );
+            tl.to(
+                cityfoot2.current,
+                {
+                    y : "-=50"
+                },
+                0
+            );
+            
+            
+            ScrollTrigger.refresh();
+        });
+
+        return () => ctx.revert();
+    }, []);
 
 
     return (
+        <>
         <section className="parallax-outer">
             <div
                 ref={parallaxRef}
@@ -146,38 +199,37 @@ export function Secparallax() {
                 <img ref={cloud1} className="cloud1" src="images/Parallax/cloud.png" alt="" />
                 <img ref={cloud2} className="cloud2" src="images/Parallax/cloud.png" alt="" />
                 <img ref={stars} className="stars" src="images/Parallax/stars.png" alt="City Skyline 2" />
-                <img  className="cityfooter" src="images/Parallax/City_Skyline2.png" alt="City Skyline 2" />
-                <img  className="cityfooter-2" src="images/Parallax/City_Skyline2.png" alt="City Skyline 2" />
                 <img ref={cloud3} className="cloud3" src="images/Parallax/cloud.png" alt="" />
+                <img  ref={cityfoot} className="cityfooter" src="images/Parallax/City_Skyline2.png" alt="City Skyline 2" />
+                <img  ref={cityfoot2} className="cityfooter-2" src="images/Parallax/City_Skyline2.png" alt="City Skyline 2" />
                 <img ref={cloud3} className="cloud4" src="images/Parallax/cloud.png" alt="" />
                 <img  className="cloud5" src="images/Parallax/cloud.png" alt="" />
+                <img ref={shapered} className="shape22" src="images/Parallax/shape2full.png" alt="" />
+                <img ref={shapeblue} className="shape21" src="images/Parallax/shape.png" alt="" />
                 
 
                 <div className="card-container">
                     <div className="description-card">
-                        <h1 ref={title}>History of KLCC 🏙️</h1>
+                        <h1 ref={title}>  Background of Study</h1>
                         <div className="parent-cardies">
-                            <div className="cardies1"><p>test</p></div>
-                            <div className="cardies2" ref={p1}><p>The Petronas Twin Towers, located in the heart of Kuala Lumpur City Centre (KLCC), were officially completed in 1998 and symbolized Malaysia’s rapid development and modernization. Designed by Argentine architect César Pelli, the towers reach a height of 452 meters, making them the tallest buildings in the world at the time and still the tallest twin towers globally. The construction was a remarkable engineering feat, involving deep foundations and over 36,000 tonnes of steel, with a design inspired by Islamic art to reflect Malaysia’s culture. One of the towers was built by a Japanese team and the other by a South Korean team, completing the project in just under seven years — a testament to international collaboration and technical excellence.</p></div>
+                            
+                            <div className="cardies2" ref={p1}>
+                                <p>Welcome to a research-based exploration into how tourism management practices shape customer satisfaction at one of Malaysia's most iconic landmarks — the PETRONAS Twin Towers. This website summarizes a comprehensive study that highlights key factors influencing the visitor experience, and suggests improvements for sustainable tourism growth.</p></div>
                             <div className="cardies3"></div>
                         </div>
+
+                        <h2 ref={objective} style={{opacity: 0}}>Objective</h2>
                         <div className="parent-card">
                             <div className="card" ref={d1}>
-                                <h1>Tallest Twin Towers in the world</h1>
-                                <p>The Petronas Towers are the tallest twin towers in the world, standing at 452 meters (1,483 feet).
-                                    They held the title of the tallest buildings in the world from 1998 to 2004.
+                                <p>Evaluate the effectiveness of current tourism management at the Twin Towers.
                                 </p>
                             </div>
                             <div className="card" ref={d2}>
-                                <h1>Engineering Marvel</h1>
-                                <p>Each tower has 88 floors and was built using a combination of reinforced concrete, steel, and glass.
-                                    The towers are designed in Islamic geometric patterns, reflecting Malaysia's cultural heritage.
+                                <p>Assess visitor satisfaction levels.
                                 </p>
                             </div>
                             <div className="card" ref={d3}>
-                                <h1>The Skybridge</h1>
-                                <p>A skybridge connects the two towers at the 41st and 42nd floors.
-                                    It is the world's highest 2-story bridge and acts as both a viewing platform and an emergency exit route.
+                                <p>Identify key tourism management factors influencing satisfaction.
                                 </p>
                             </div>
                         </div>
@@ -191,5 +243,11 @@ export function Secparallax() {
                 
             </div>
         </section>
+        <section className="parallax-outer">
+
+        </section>
+        <div style={{ height: "200vh" }}></div>
+        
+        </>
     );
 }
