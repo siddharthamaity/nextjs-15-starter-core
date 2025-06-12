@@ -23,8 +23,8 @@
         "@next/bundle-analyzer": "^15.3.3",
         "@next/eslint-plugin-next": "^15.3.3",
         "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-        "@types/node": "^22.15.29",
-        "@types/react": "^19.1.6",
+        "@types/node": "^24.0.1",
+        "@types/react": "^19.1.8",
         "@types/react-dom": "^19.1.6",
         "eslint": "^9.28.0",
         "eslint-config-next": "^15.3.3",
@@ -33,9 +33,9 @@
         "eslint-plugin-promise": "^7.2.1",
         "eslint-plugin-react": "^7.37.5",
         "globals": "^16.2.0",
-        "postcss": "^8.5.4",
+        "postcss": "^8.5.5",
         "prettier": "^3.5.3",
         "typescript": "^5.8.3",
-        "typescript-eslint": "^8.33.1"
+        "typescript-eslint": "^8.34.0"
     }
 }
