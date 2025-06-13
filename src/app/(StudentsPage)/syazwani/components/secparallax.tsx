@@ -218,7 +218,7 @@ export function Secparallax() {
                             <div className="cardies3"></div>
                         </div>
 
-                        <h2 ref={objective} style={{opacity: 0}}>Objective</h2>
+                        <h2 ref={objective} style={{opacity: 0, fontWeight: "bolder", fontSize: "2rem"}}>Objective</h2>
                         <div className="parent-card">
                             <div className="card" ref={d1}>
                                 <p>Evaluate the effectiveness of current tourism management at the Twin Towers.

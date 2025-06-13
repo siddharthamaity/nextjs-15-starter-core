@@ -1,0 +1,14 @@
+.pageContainer {
+  position: relative;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  gap: 40px;
+  background: linear-gradient(180deg,rgba(61, 126, 170, 1) 0%, rgba(255, 228, 122, 1) 100%);
+  overflow: hidden;
+  text-align: center;
+  /* justify-content: center; */
+  flex-direction: column;
+
+}

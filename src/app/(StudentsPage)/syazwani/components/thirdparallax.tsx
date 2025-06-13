@@ -79,7 +79,7 @@ export function Thirdparallax() {
                 
             
         </section>
-        <div style={{ height: "400vh" }}></div>
+        <div style={{ height: "350vh" }}></div>
       </>
     );
 }

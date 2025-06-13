@@ -14,7 +14,7 @@ const cards = [
     id: 2,
     title: "Syazwani",
     description: "The Impact Of Tourism Management On Customer Satisfaction: A Case Study Of Petronas Twin Towers, Kuala Lumpur",
-    image: "/images/Trees.jpeg",
+    image: "/images/Syazwani1.png",
     link: "/syazwani"
   },
   {
@@ -224,6 +224,7 @@ export function Hero() {
               height: "600px",
               objectFit: "cover",
               borderRadius: "16px",
+              
             }}
           />
         </div>
