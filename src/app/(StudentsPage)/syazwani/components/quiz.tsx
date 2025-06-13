@@ -69,7 +69,6 @@ export default function QuizEnvironmental() {
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [score, setScore] = useState(0);
   const [completed, setCompleted] = useState(false);
-  const confettiRef = useRef<ConfettiHandle>(null);
 
   const handleAnswer = (index: number) => {
     if (selectedOption !== null) return;
