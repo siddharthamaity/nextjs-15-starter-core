@@ -5,7 +5,7 @@ import { Hero } from "@/components/heroMain";
 
 const Page = () => {
     return (
-        <div style={{ height: "2000px", background: "#B8C9AC" }}>
+        <div style={{background: "#B8C9AC" }}>
             <Navbar />
             <Hero />
         </div>

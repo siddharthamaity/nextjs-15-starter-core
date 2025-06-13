@@ -8,21 +8,24 @@ const cards = [
     title: "Sweethorn",
     description: "Measuring Soil Compaction Using Five-Point Pocket",
     image: "/images/Trees.jpeg",
-    link: "/sweethorn"
+    link: "/sweethorn",
+    quizlink: "/sweethorn/quiz"
   },
   {
     id: 2,
     title: "Syazwani",
     description: "The Impact Of Tourism Management On Customer Satisfaction: A Case Study Of Petronas Twin Towers, Kuala Lumpur",
-    image: "/images/Trees.jpeg",
-    link: "/syazwani"
+    image: "/images/Syazwani1.png",
+    link: "/syazwani",
+    quizlink: "/syazwani/quiz"
   },
   {
     id: 3,
     title: "Hizran",
     description: "Land use and land cover change at Kampung Bagan Pasir, Tanjung Karang using satellite imagery used change on mangrove ecosystem in sungai merbok , kedah : a remote sensing approach",
     image: "/images/Trees.jpeg",
-    link: "/amir"
+    link: "/amir",
+    quizlink: "/amir/quiz"
   },
 ];
 
@@ -42,7 +45,7 @@ export function Hero() {
           scrollSnapAlign: "start",
           position: "relative",
           width: "100%",
-          overflow: "hidden",
+          
         }}
       >
         <video
@@ -89,7 +92,6 @@ export function Hero() {
         style={{
           height: "100vh",
           scrollSnapAlign: "start",
-          overflowY: "auto",
           padding: "100px 20px",
           display: "flex",
           flexDirection: "column",
@@ -122,7 +124,6 @@ export function Hero() {
                 width: "400px",
                 height: "550px",
                 borderRadius: "16px",
-                overflow: "hidden",
                 display: "flex",
                 flexDirection: "column",
               }}
@@ -201,10 +202,10 @@ export function Hero() {
         }}
       >
         {/* Description */}
-        <div style={{ flex: "1 1 30%", minWidth: "300px" ,backgroundColor : "#FAFFCA", borderRadius: "20px", padding: "20px", height: "600px", }}>
-          <h2 style={{ paddingBottom: "20px" }}>About Ecostudy 🌳</h2>
-          <h3 style={{ paddingBottom: "40px" }}>Exploring Sustainable Development in Malaysia</h3>
-          <p>
+        <div style={{ flex: "1 1 30%", minWidth: "300px" ,backgroundColor : "#FAFFCA", borderRadius: "20px", padding: "20px", height: "600px" }}>
+          <h2 style={{ paddingBottom: "20px", color:"#000" }}>About Ecostudy 🌳</h2>
+          <h3 style={{ paddingBottom: "40px", color:"#000" }}>Exploring Sustainable Development in Malaysia</h3>
+          <p style={{color:"#000"}}>
             EcoStudy is a collaborative platform dedicated to<br/>
              investigating sustainable development and environmental <br/>
             monitoring in Malaysia through technological and managerial<br/>
@@ -226,6 +227,7 @@ export function Hero() {
               height: "600px",
               objectFit: "cover",
               borderRadius: "16px",
+              
             }}
           />
         </div>
@@ -307,7 +309,7 @@ export function Hero() {
                   Alam Bina Student
                 </h5>
               </div>
-              <Link href={card.link}>
+              <Link href={card.quizlink}>
                   <button
                     style={{
                       marginTop : "30px",

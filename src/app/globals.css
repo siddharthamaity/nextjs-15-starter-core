@@ -1,6 +1,9 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -17,13 +20,342 @@ html,
 body {
     max-width: 100vw;
     overflow-x: hidden;
-    overflow-y: hidden;
+    
 }
 
 body {
     background-color: var(--background);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.parallax-outer {
+    overflow: hidden;
+    height: 100%
+}
+
+.parallax{
+    height: 110vh;
+    width: 100%;
+    position: relative;
+}
+
+.parallax img{
+    position: absolute;
+}
+
+
+.shape1, 
+.shape2{
+    width: 100%;
+    bottom: 0;
+}
+
+.shape1{
+    top: 80%;
+    z-index: 4;
+    width: 100%;
+}
+.shape2{
+    bottom: 5%;
+    z-index: 3;
+}
+.shape3{
+    top: 75%;
+    z-index: 3;
+    width: 100%;
+    width: 100%;
+    bottom: 0;
+    right: 10%
+    
+}
+
+.citsky1{
+    left: 31%;
+    top: 50%;
+    width: 60%;
+    transform: translate(-50%,-50%);
+}
+.citsky2{
+    top: 40%;
+    left: 50%;
+    width: 60%;
+}
+.citsky3{
+    top: 45%;
+    left: 00%;
+    width: 60%;
+}
+
+.cityfooter{
+    width: 50%;
+    z-index: 1;
+    top: 60%;
+    opacity: 100%;
+    mix-blend-mode: multiply;
+}
+.cityfooter-2{
+    width: 50%;
+    z-index: 1;
+    top: 70%;
+    opacity: 100%;
+    mix-blend-mode: multiply;
+    left: 55%;
+}
+
+
+.copy{
+    position :absolute;
+    bottom: -14%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    z-index: -1;
+    opacity: 0;
+    color: #FFFF;
+
+}
+
+.copy h1{
+    font-size: 3rem;
+}
+
+.about{
+    padding-left: 10%;
+    padding-bottom: 20%;
+}
+
+.about h2{
+    color: #0a0a0a;
+    font-size: 2rem;
+
+}
+
+.about p{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.card-container{
+    padding: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-content: space-between;
+    
+    
+}
+
+.description-card {
+  /* border: 1px red solid; */
+  gap: 20px;
+  flex: 1;
+  color: white;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+}
+
+.description-card h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  bottom: 0%;
+  opacity: 0;
+  
+}
+
+.parent-cardies {
+  /* border : red solid 1px; */
+  display: flex;
+  gap: 0px;
+}
+
+.cardies1,
+.cardies2,
+.cardies3{
+  /* background-color: rgba(255, 255, 255, 0.05); */
+  /* padding: 20px; */
+  border-radius: 10px;
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  text-align: start;
+}
+
+.cardies1{
+    /* border : red solid 1px; */
+    width: 7%;
+    opacity: 0;
+    
+}
+
+.cardies2{
+    /* border : red solid 1px; */
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 60%;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.cardies2 h1{
+    /* opacity: 1; */
+    padding: 0;
+}
+
+.cardies3{
+    width: 20%;
+    opacity: 0;
+}
+
+
+.image-card {
+  flex: 1;
+  position: relative;
+}
+
+.image-card img {
+  width: 100%;
+  max-width: 5000px;
+  border-radius: 10px;
+  object-fit: cover;
+  left: 600px;
+  top: 300px;
+  display: block;
+  height: auto;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  
+}
+
+/* .image-card::before {
+  content: "";
+  position: absolute;
+  bottom: -590px;
+  left: 400px;
+  width: 250px;
+  height: 250px;
+  background-color: rgba(94, 255, 0, 0.683);
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  mix-blend-mode: multiply;
+} */
+
+.parent-card{
+    margin-top: 0px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    text-align: start;
+    /* border: red 1px solid; */
+    
+}
+
+.card{
+    border-radius: 20px;
+    height: 100px;
+    width: 240px;
+    opacity: 0;
+    background-color: rgba(114, 25, 222, 0.298);
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+}
+
+.stars{
+    opacity: 0%;
+    transform: translate(-50%,-50%);
+    left: 900px;
+    top: 400px;
+}
+
+.cloud1{
+    opacity: 100%;
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.cloud2{
+    opacity: 100%;
+    /* transform: translate(-50%,-50%); */
+    z-index: 1;
+    right: 30%;
+    bottom: -57%;
+    /* left: 80%; */
+}
+.cloud4{
+    opacity: 100%;
+    /* transform: translate(-50%,-50%); */
+    
+    z-index: 1;
+    right: 0%;
+    bottom: -69%;
+    /* left: 80%; */
+}
+
+.cloud5{
+    opacity: 100%;
+    /* transform: translate(-50%,-50%); */
+    /* border: red solid 1px;     */
+    z-index: 1;
+    right: -50%;
+    bottom: -119%;
+    /* left: 80%; */
+}
+
+.shape22{
+    top: 80%;
+    z-index: 2;
+    width: 100%;
+}
+
+.shape21{
+    top: 75%;
+    z-index: 1;
+    width: 100%;
+}
+
+
+.city{
+    top: 500px;
+    z-index: 0;
+    transform: translate(-50%,-50%);
+    left: 1000px;
+}
+
+
+.card img{
+    width: 100px;
+    margin-bottom: 30px;
+    
+
+}
+
+.card h2{
+    text-align: start;
+    font-weight:100;
+}
+
+.card h1{
+    text-align: start;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #FFFF;
+    transition: color 1s;
+}
+
+.card h1:hover{
+    color: #a6a6a6;
 }
 
 * {

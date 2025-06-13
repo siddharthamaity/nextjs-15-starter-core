@@ -1,0 +1,73 @@
+.pageContainer {
+  position: relative;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  gap: 40px;
+  background: linear-gradient(180deg,rgba(61, 126, 170, 1) 0%, rgba(255, 228, 122, 1) 100%);
+  overflow: hidden;
+  text-align: center;
+  /* justify-content: center; */
+  flex-direction: column;
+
+}
+
+.pageContainer h1{
+    color:  white;
+    
+    font-size: 3rem;
+    
+}
+
+.pageContainer p{
+    margin-top: 20px;
+    font-size: 1rem;
+    color: white;
+}
+
+.cardparent{
+    /* border: 1px #505050 solid; */
+    height: 800px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cardparent h1{
+    font-size: 2rem;
+}
+
+.card{
+    position: relative;
+    padding: 20px;
+    width: 400px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.31);
+    border-radius: 20px;
+    /* border : red 1px solid; */
+    display: flex;
+    flex-direction: column;
+    
+    /* opacity: 0; */
+}
+
+.chartdiv{
+    
+    /* top: 80%; */
+    /* border : #1d1d1d27 1px solid; */
+    margin-top: 100px;
+    
+    width: 350px;
+    height: 450px;
+}
+
+.piechart{
+    /* border : #1d1d1d27 1px solid; */
+    width: 350px;
+    height: 450px;
+    align-items: center;
+    display: flex;
+
+}

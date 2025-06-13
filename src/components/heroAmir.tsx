@@ -3,10 +3,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./AmirPage.module.css";
+import { Navbar } from "./navbar";
+
 
 export function HeroAmir() {
   return (
     <div className={styles.page}>
+
       {/* Navbar (placed above hero image for layering control) */}
       <nav className={styles.navbar}>
         <div className={styles.navLeft}>EcoStudy</div>
@@ -15,6 +18,7 @@ export function HeroAmir() {
           <Link href="/amir/quiz">Quiz</Link>
         </div>
       </nav>
+
 
       {/* Hero Section with full-width image background */}
       <section className={styles.titleSection}>
