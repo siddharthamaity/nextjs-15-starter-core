@@ -10,4 +10,5 @@ const AmirPage = () => {
   );
 };
 
+
 export default AmirPage;
