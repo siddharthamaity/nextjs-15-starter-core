@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -14,7 +14,7 @@ export function Parallax() {
   const shape2 = useRef<HTMLImageElement>(null);
   const copy = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       gsap.registerPlugin(ScrollTrigger);
       
@@ -27,9 +27,7 @@ export function Parallax() {
           scrub: 1,
           pin: true,
           pinSpacing: true,
-          onUpdate: (self) => {
-            setBackground(Math.ceil(self.progress * 100 + 20));
-          },
+          
         },
       });
 
@@ -39,6 +37,7 @@ export function Parallax() {
         .to(citysky2.current, { y: "+=1000" }, 0)
         .to(citysky3.current, { y: "+=1000" }, 0)
         .to(copy.current, { y: "-250%", opacity: 1 }, 0);
+        ScrollTrigger.refresh();
     });
 
     return () => ctx.revert();
@@ -62,6 +61,7 @@ export function Parallax() {
 
         <div ref={copy} className="copy">
           <h1>Tourism Management and Visitor Satisfaction at Petronas Twin Towers</h1>
+          <h2 style={{marginTop: "20px", fontSize: "1rem"}}>A study By Syazwani</h2>
         </div>
       </div>
     </section>

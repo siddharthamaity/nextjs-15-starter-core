@@ -25,7 +25,7 @@ const buttonStyle = {
 
 export function Navbar() {
     return (
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", position: "fixed", top: 0, right: 0, zIndex: 1000, padding: "10px 20px", width: "100%", backgroundColor: "#92CA6A", }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", position: "fixed", top: 0, right: 0, zIndex: 10, padding: "10px 20px", width: "100%", backgroundColor: "#92CA6A", }}>
             <div style={{ fontWeight: "bold", fontSize: "20px" }}>
                 EcoStudy
             </div>

@@ -3,6 +3,7 @@
 import { h1 } from "framer-motion/client"
 import { Loader } from "@googlemaps/js-api-loader";
 import React, { useEffect } from "react"
+import { googleMapsLoader } from "@/lib/GoogleMapsLoader";
 
 export function Map(){
 
@@ -11,15 +12,12 @@ export function Map(){
     useEffect(() => {
         const initMap = async () => {
             
-            const loader = new Loader({
-                apiKey : process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
-                version: 'weekly'
-            });
+            await googleMapsLoader.load();
 
-            const { Map } = await loader.importLibrary('maps');
+            const { Map } = await googleMapsLoader.importLibrary('maps');
 
             // init  a marker
-            const { Marker } = await loader.importLibrary('marker') as google.maps.MarkerLibrary;
+            const { Marker } = await googleMapsLoader.importLibrary('marker') as google.maps.MarkerLibrary;
             
             const position = {
                 lat : 3.157764,

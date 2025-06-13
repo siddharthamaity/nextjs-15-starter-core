@@ -87,9 +87,26 @@ body {
     width: 60%;
 }
 
+.cityfooter{
+    width: 50%;
+    z-index: 1;
+    top: 60%;
+    opacity: 100%;
+    mix-blend-mode: multiply;
+}
+.cityfooter-2{
+    width: 50%;
+    z-index: 1;
+    top: 70%;
+    opacity: 100%;
+    mix-blend-mode: multiply;
+    left: 55%;
+}
+
+
 .copy{
     position :absolute;
-    bottom: 0%;
+    bottom: -14%;
     left: 60%;
     transform: translate(-50%,-50%);
     display: flex;
@@ -135,32 +152,37 @@ body {
 }
 
 .description-card {
+  /* border: 1px red solid; */
+  gap: 20px;
   flex: 1;
   color: white;
   z-index: 2;
-  
-  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
 }
 
 .description-card h1 {
   font-family: "Oswald", sans-serif;
   font-size: 4rem;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   bottom: 0%;
   opacity: 0;
   
 }
 
 .parent-cardies {
+  /* border : red solid 1px; */
   display: flex;
-  gap: 20px;
+  gap: 0px;
 }
 
 .cardies1,
 .cardies2,
 .cardies3{
   /* background-color: rgba(255, 255, 255, 0.05); */
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 10px;
   color: white;
   font-size: 0.8rem;
@@ -169,16 +191,25 @@ body {
 }
 
 .cardies1{
-    width: 30%;
+    /* border : red solid 1px; */
+    width: 7%;
     opacity: 0;
+    
 }
 
 .cardies2{
-    border-left:2px solid red;
+    /* border : red solid 1px; */
+    font-size: 1.3rem;
+    font-weight: bold;
     width: 60%;
     opacity: 0;
-    background: #0000004e;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
+.cardies2 h1{
+    /* opacity: 1; */
+    padding: 0;
+}
+
 .cardies3{
     width: 20%;
     opacity: 0;
@@ -218,20 +249,26 @@ body {
 } */
 
 .parent-card{
-    margin-top: 100px;
+    margin-top: 0px;
     display: flex;
     gap: 50px;
     justify-content: center;
     text-align: start;
+    /* border: red 1px solid; */
     
 }
 
 .card{
-    border-radius: 40px;
+    border-radius: 20px;
     height: 100px;
-    width: 200px;
-    /* transition: transform 0.5s ease-in-out;     */
+    width: 240px;
     opacity: 0;
+    background-color: rgba(114, 25, 222, 0.298);
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
 }
 
 .stars{
@@ -256,6 +293,38 @@ body {
     bottom: -57%;
     /* left: 80%; */
 }
+.cloud4{
+    opacity: 100%;
+    /* transform: translate(-50%,-50%); */
+    
+    z-index: 1;
+    right: 0%;
+    bottom: -69%;
+    /* left: 80%; */
+}
+
+.cloud5{
+    opacity: 100%;
+    /* transform: translate(-50%,-50%); */
+    /* border: red solid 1px;     */
+    z-index: 1;
+    right: -50%;
+    bottom: -119%;
+    /* left: 80%; */
+}
+
+.shape22{
+    top: 80%;
+    z-index: 2;
+    width: 100%;
+}
+
+.shape21{
+    top: 75%;
+    z-index: 1;
+    width: 100%;
+}
+
 
 .city{
     top: 500px;
