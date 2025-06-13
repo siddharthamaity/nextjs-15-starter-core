@@ -29,7 +29,7 @@ export function ForthParallax(){
             scrollTrigger: {
               trigger: parallaxRef.current,
               start: "top top",
-              end: "+=4000",
+              end: "+=3000",
               scrub: 1,
               pin: true,
               pinSpacing: false,
@@ -82,7 +82,7 @@ export function ForthParallax(){
                 {/* <Quiz /> */}
 
             </section>
-            <div style={{ height: "350vh" }}></div>
+            <div style={{ height: "50vh" }}></div>
         </>
     )
 }

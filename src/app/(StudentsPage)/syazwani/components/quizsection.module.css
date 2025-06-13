@@ -43,3 +43,15 @@
 .linkdiv button:hover{
   background:	#398e57 ;
 }
+
+.pageContainer p{
+  color: white;
+}
+
+.link{
+  color: #398e57;
+  transition: color 0.3s ease-in-out;
+}
+.link:hover{
+  color: #FFFF;
+}

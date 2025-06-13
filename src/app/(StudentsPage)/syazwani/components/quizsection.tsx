@@ -37,6 +37,9 @@ export function Quizsection(){
             </button>
           </a>
         </div>
+        <p>
+          Designed & Developed by <strong><a className={style.link} href="https://github.com/HarithHadi">Harith Hadi</a></strong><br />
+        </p>
         
 
       </section>

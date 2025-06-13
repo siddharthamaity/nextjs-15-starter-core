@@ -106,7 +106,7 @@ body {
 
 .copy{
     position :absolute;
-    bottom: 0%;
+    bottom: -14%;
     left: 60%;
     transform: translate(-50%,-50%);
     display: flex;

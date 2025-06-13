@@ -16,51 +16,51 @@ const questions: Question[] = [
     options: ["Promote the Twin Towers internationally", "Improve food services", "Evaluate tourism management's impact on customer satisfaction", "Increase Ticket Sales"],
     correctAnswer: 2,
   },
-  {
-    question: "Which of the following is a major satisfaction factor mentioned in the study?",
-    options: ["Parking lot capacity", "Weather Conditions", "Cleanliness", "Free Merchandise"],
-    correctAnswer: 2,
-  },
-  {
-    question: "Which of the following is NOT listed as a management factor?",
-    options: ["Staff Performance", "Infrastructure", "Cultural Dances", "Safety Protocols"],
-    correctAnswer: 2,
-  },
-  {
-    question: "Which aspect had the greatest impact on visitor satisfaction?",
-    options: ["Weather", "Staff Behavior", "Ticket Price", "Food Stalls"],
-    correctAnswer: 1,
-  },
-  {
-    question: "Which is NOT mentioned as a management factor in the study?",
-    options: ["Infrastructure", "Crowd Control", "Climate", "Staff Training"],
-    correctAnswer: 3,
-  },
-  {
-    question: "The study was conducted at multiple tourist sites across Malaysia.",
-    options: ["True", "False"],
-    correctAnswer: 1,
-  },
-  {
-    question: "Tourism Management has little effect on repeat visits?",
-    options: ["True", "False"],
-    correctAnswer: 1,
-  },
-  {
-    question: "All visitors reported full satisfaction with their experience.",
-    options: ["True", "False"],
-    correctAnswer: 1,
-  },
-  {
-    question: "Visitor safety is considered an important part of tourism management.",
-    options: ["True", "False"],
-    correctAnswer: 0,
-  },
-  {
-    question: "The Twin Towers are important both for tourism and national identity.",
-    options: ["True", "False"],
-    correctAnswer: 0,
-  },
+  // {
+  //   question: "Which of the following is a major satisfaction factor mentioned in the study?",
+  //   options: ["Parking lot capacity", "Weather Conditions", "Cleanliness", "Free Merchandise"],
+  //   correctAnswer: 2,
+  // },
+  // {
+  //   question: "Which of the following is NOT listed as a management factor?",
+  //   options: ["Staff Performance", "Infrastructure", "Cultural Dances", "Safety Protocols"],
+  //   correctAnswer: 2,
+  // },
+  // {
+  //   question: "Which aspect had the greatest impact on visitor satisfaction?",
+  //   options: ["Weather", "Staff Behavior", "Ticket Price", "Food Stalls"],
+  //   correctAnswer: 1,
+  // },
+  // {
+  //   question: "Which is NOT mentioned as a management factor in the study?",
+  //   options: ["Infrastructure", "Crowd Control", "Climate", "Staff Training"],
+  //   correctAnswer: 3,
+  // },
+  // {
+  //   question: "The study was conducted at multiple tourist sites across Malaysia.",
+  //   options: ["True", "False"],
+  //   correctAnswer: 1,
+  // },
+  // {
+  //   question: "Tourism Management has little effect on repeat visits?",
+  //   options: ["True", "False"],
+  //   correctAnswer: 1,
+  // },
+  // {
+  //   question: "All visitors reported full satisfaction with their experience.",
+  //   options: ["True", "False"],
+  //   correctAnswer: 1,
+  // },
+  // {
+  //   question: "Visitor safety is considered an important part of tourism management.",
+  //   options: ["True", "False"],
+  //   correctAnswer: 0,
+  // },
+  // {
+  //   question: "The Twin Towers are important both for tourism and national identity.",
+  //   options: ["True", "False"],
+  //   correctAnswer: 0,
+  // },
   
 ];
 
@@ -151,11 +151,13 @@ export default function QuizEnvironmental() {
           <p>Your score: {score} / {questions.length}</p>
           <p className={styles.feedback}>{feedbackMessage}</p>
           
+          
 
           <div className={styles.buttonGroup}>
             <button onClick={resetQuiz} className={styles.resetButton}>Try Again</button>
             <Link href="/" className={styles.homeButton}>Go Home</Link>
           </div>
+          
         </div>
       )}
     </div>

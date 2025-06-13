@@ -61,6 +61,7 @@ export function Parallax() {
 
         <div ref={copy} className="copy">
           <h1>Tourism Management and Visitor Satisfaction at Petronas Twin Towers</h1>
+          <h2 style={{marginTop: "20px", fontSize: "1rem"}}>A study By Syazwani</h2>
         </div>
       </div>
     </section>

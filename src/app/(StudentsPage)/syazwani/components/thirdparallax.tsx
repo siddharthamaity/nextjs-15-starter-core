@@ -28,7 +28,7 @@ export function Thirdparallax() {
             scrollTrigger: {
               trigger: parallaxRef.current,
               start: "top top",
-              end: "+=5000",
+              end: "+=3000",
               scrub: 1,
               pin: true,
               pinSpacing: false,
@@ -79,7 +79,7 @@ export function Thirdparallax() {
                 
             
         </section>
-        <div style={{ height: "350vh" }}></div>
+        <div style={{ height: "250vh" }}></div>
       </>
     );
 }
