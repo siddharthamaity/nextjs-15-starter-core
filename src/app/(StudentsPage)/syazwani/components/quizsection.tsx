@@ -1,5 +1,4 @@
 import style from "./quizsection.module.css"
-import  Quiz  from "./quiz";
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -28,7 +27,18 @@ export function Quizsection(){
   return(
     <>
       <section className={style.pageContainer}>
-        <Quiz/>
+        <div className={style.titlediv}>
+          <h1>Let's Test your knowledge🧠</h1>
+        </div>
+        <div className={style.linkdiv}>
+          <a href="syazwani/quiz">
+            <button>
+              IM READY
+            </button>
+          </a>
+        </div>
+        
+
       </section>
     </>
   )

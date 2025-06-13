@@ -1,0 +1,114 @@
+.container {
+  
+  max-width: 600px;
+  margin: 100px auto;
+  /* height: 500px; */
+  padding: 20px;
+  background: #f0f8ff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.option {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.option:hover {
+  background-color: #d6d6d6;
+}
+
+.correct {
+  background-color: #50C878 !important;
+  color: white;
+}
+
+.incorrect {
+  background-color: #FF5733 !important;
+  color: white;
+}
+
+.result {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.progressBar {
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.progressFill {
+  height: 100%;
+  background: #50C878;
+  transition: width 0.5s ease;
+}
+
+.showCorrect {
+  background-color: #50C878;
+  color: white;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.resetButton,
+.homeButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.resetButton {
+  background-color: #36A2EB;
+  color: white;
+}
+
+.resetButton:hover {
+  background-color: #2a85c3;
+}
+
+.homeButton {
+  background-color: #FF6B6B;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 40px;
+}
+
+.homeButton:hover {
+  background-color: #cc4c4c;
+}
+
+.feedback {
+  padding: 20px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #50C878;
+}
+

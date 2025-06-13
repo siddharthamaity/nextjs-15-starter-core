@@ -8,21 +8,24 @@ const cards = [
     title: "Sweethorn",
     description: "Measuring Soil Compaction Using Five-Point Pocket",
     image: "/images/Trees.jpeg",
-    link: "/sweethorn"
+    link: "/sweethorn",
+    quizlink: "/sweethorn/quiz"
   },
   {
     id: 2,
     title: "Syazwani",
     description: "The Impact Of Tourism Management On Customer Satisfaction: A Case Study Of Petronas Twin Towers, Kuala Lumpur",
     image: "/images/Syazwani1.png",
-    link: "/syazwani"
+    link: "/syazwani",
+    quizlink: "/syazwani/quiz"
   },
   {
     id: 3,
     title: "Hizran",
     description: "Land use and land cover change at Kampung Bagan Pasir, Tanjung Karang using satellite imagery used change on mangrove ecosystem in sungai merbok , kedah : a remote sensing approach",
     image: "/images/Trees.jpeg",
-    link: "/amir"
+    link: "/amir",
+    quizlink: "/amir/quiz"
   },
 ];
 
@@ -306,7 +309,7 @@ export function Hero() {
                   Alam Bina Student
                 </h5>
               </div>
-              <Link href={card.link}>
+              <Link href={card.quizlink}>
                   <button
                     style={{
                       marginTop : "30px",
