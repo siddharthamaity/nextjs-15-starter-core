@@ -7,13 +7,7 @@
   overflow-y: auto;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: auto;
-}
+
 
 /* --- HERO SECTION WITH FULL-WIDTH IMAGE AND OVERLAY TITLE --- */
 .titleSection {

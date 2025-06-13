@@ -68,5 +68,5 @@ export default function DoughnutChart({ shouldRender }: Props) {
     }
   }, [shouldRender]);
 
-  return <Doughnut data={chartData} options={options} />;
+  return <Doughnut data={chartData as any} options={options as any} />;
 }

@@ -47,5 +47,5 @@ const options = {
 };
 
 export default function PieChart({ shouldRender }: { shouldRender: boolean }) {
-  return shouldRender ? <Pie data={data} options={options} /> : null;
+  return shouldRender ? <Pie data={data} options={options as any} /> : null;
 }
