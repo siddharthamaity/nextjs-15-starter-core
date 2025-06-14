@@ -8,6 +8,7 @@
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: black
 }
 
 .options {
@@ -15,6 +16,7 @@
   flex-direction: column;
   gap: 10px;
   margin: 20px 0;
+  color: black
 }
 
 .option {
@@ -25,6 +27,7 @@
   cursor: pointer;
   font-size: 16px;
   transition: 0.3s;
+  color: black
 }
 
 .option:hover {
