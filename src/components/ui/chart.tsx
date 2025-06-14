@@ -165,7 +165,6 @@ function ChartTooltipContent({
   ])
 
   if (!active || !payload?.length) {
-    // eslint-disable-next-line newline-before-return
     return null
   }
 
