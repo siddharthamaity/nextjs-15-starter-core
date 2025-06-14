@@ -15,6 +15,8 @@ export default defineConfig([
       // Turn off the newline-before-return rule
       "style/newline-before-return": "off",
       "react/react-in-jsx-scope": "off",
+      // allow jsx syntax in js files (for next.js project)
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx",".tsx",".ts"] }], //should add ".ts" if typescript project
     },
   },
   tseslint.configs.recommended,
