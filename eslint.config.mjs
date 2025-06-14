@@ -7,18 +7,29 @@ import { defineConfig } from "eslint/config";
 export default defineConfig([
   {
     files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
-    languageOptions: { globals: globals.browser },
+    languageOptions: {
+      globals: globals.browser,
+      parserOptions: {
+        ecmaFeatures: { jsx: true },
+        sourceType: "module",
+      },
+    },
     plugins: {
+      react: pluginReact,
       style: pluginStyle,
     },
     rules: {
-      // Turn off the newline-before-return rule
+      // Disable rules
       "style/newline-before-return": "off",
       "react/react-in-jsx-scope": "off",
-      // allow jsx syntax in js files (for next.js project)
-      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx",".tsx",".ts"] }], //should add ".ts" if typescript project
+
+      // Allow jsx in ts/tsx/js/jsx files
+      "react/jsx-filename-extension": [
+        "warn",
+        { extensions: [".js", ".jsx", ".ts", ".tsx"] },
+      ],
     },
   },
-  tseslint.configs.recommended,
-  pluginReact.configs.flat.recommended,
+  ...tseslint.configs.recommended,
+  ...pluginReact.configs.flat.recommended,
 ]);
