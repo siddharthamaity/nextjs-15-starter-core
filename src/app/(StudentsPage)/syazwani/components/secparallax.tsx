@@ -195,17 +195,17 @@ export function Secparallax() {
                 }}
             >
                 
-                <img ref={city} className="city" src="images/Parallax/City_Skyline2.png" alt="City Skyline 2" />
-                <img ref={cloud1} className="cloud1" src="images/Parallax/cloud.png" alt="" />
-                <img ref={cloud2} className="cloud2" src="images/Parallax/cloud.png" alt="" />
-                <img ref={stars} className="stars" src="images/Parallax/stars.png" alt="City Skyline 2" />
-                <img ref={cloud3} className="cloud3" src="images/Parallax/cloud.png" alt="" />
-                <img  ref={cityfoot} className="cityfooter" src="images/Parallax/City_Skyline2.png" alt="City Skyline 2" />
-                <img  ref={cityfoot2} className="cityfooter-2" src="images/Parallax/City_Skyline2.png" alt="City Skyline 2" />
-                <img ref={cloud3} className="cloud4" src="images/Parallax/cloud.png" alt="" />
-                <img  className="cloud5" src="images/Parallax/cloud.png" alt="" />
-                <img ref={shapered} className="shape22" src="images/Parallax/shape2full.png" alt="" />
-                <img ref={shapeblue} className="shape21" src="images/Parallax/shape.png" alt="" />
+                <img ref={city} className="city" src="/images/Parallax/City_Skyline2.png" alt="City Skyline 2" />
+                <img ref={cloud1} className="cloud1" src="/images/Parallax/cloud.png" alt="" />
+                <img ref={cloud2} className="cloud2" src="/images/Parallax/cloud.png" alt="" />
+                <img ref={stars} className="stars" src="/images/Parallax/stars.png" alt="City Skyline 2" />
+                <img ref={cloud3} className="cloud3" src="/images/Parallax/cloud.png" alt="" />
+                <img  ref={cityfoot} className="cityfooter" src="/images/Parallax/City_Skyline2.png" alt="City Skyline 2" />
+                <img  ref={cityfoot2} className="cityfooter-2" src="/images/Parallax/City_Skyline2.png" alt="City Skyline 2" />
+                <img ref={cloud3} className="cloud4" src="/images/Parallax/cloud.png" alt="" />
+                <img  className="cloud5" src="/images/Parallax/cloud.png" alt="" />
+                <img ref={shapered} className="shape22" src="/images/Parallax/shape2full.png" alt="" />
+                <img ref={shapeblue} className="shape21" src="/images/Parallax/shape.png" alt="" />
                 
 
                 <div className="card-container">

@@ -220,7 +220,7 @@ export function Hero() {
         {/* Image */}
         <div style={{ flex: "1 1 70%", minWidth: "300px" }}>
           <img
-            src="/images/trees.jpeg"
+            src="/images/Trees.jpeg"
             alt=""
             style={{
               width: "100%",
