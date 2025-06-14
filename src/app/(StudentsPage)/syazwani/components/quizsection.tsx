@@ -38,7 +38,7 @@ export function Quizsection(){
           </a>
         </div>
         <p>
-          Designed & Developed by <strong><a className={style.link} href="https://github.com/HarithHadi">Harith Hadi</a></strong><br />
+          Designed & Developed by <strong><a className={style.link} href="https://hrthprtflio.vercel.app/">Harith Hadi</a></strong><br />
         </p>
         
 

@@ -13,15 +13,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 export function ForthParallax(){
     const parallaxRef = useRef(null);
     const card1 = useRef(null);
-    const card2 = useRef(null);
-    const card3 = useRef(null);
     const [showChart1, setShowChart1] = useState(false);
     const [showPieChart1, setShowPieChart1] = useState(false);
     const [showDoughnut, setshowDoughnut] = useState(false);
     const [background, setBackground] = useState(20);
 
     useLayoutEffect(()=>{
-        let ctx = gsap.context(() => {
+        const ctx = gsap.context(() => {
           gsap.registerPlugin(ScrollTrigger);
           
           const tl = gsap.timeline({
@@ -45,7 +43,7 @@ export function ForthParallax(){
           });
           tl.to(card1.current, {opacity: 1 }, 0)
           ScrollTrigger.refresh();
-    })
+    });
     return () => ctx.revert();
     }, []);
     
