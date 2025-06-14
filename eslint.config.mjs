@@ -14,6 +14,7 @@ export default defineConfig([
     rules: {
       // Turn off the newline-before-return rule
       "style/newline-before-return": "off",
+      "react/react-in-jsx-scope": "off",
     },
   },
   tseslint.configs.recommended,
