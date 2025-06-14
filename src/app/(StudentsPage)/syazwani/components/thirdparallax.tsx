@@ -20,7 +20,7 @@ export function Thirdparallax() {
     const mapdiv = useRef(null);
 
     useLayoutEffect(() => {
-        let ctx = gsap.context(() => {
+        const ctx = gsap.context(() => {
           gsap.registerPlugin(ScrollTrigger);
           
           const tl = gsap.timeline({
