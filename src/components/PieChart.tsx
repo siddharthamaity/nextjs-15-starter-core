@@ -8,7 +8,7 @@ import {
   Legend
 } from 'chart.js';
 
-import { ChartOptions } from 'chart.js';
+import type { ChartOptions } from 'chart.js';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 

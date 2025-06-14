@@ -165,6 +165,8 @@ function ChartTooltipContent({
   ])
 
   if (!active || !payload?.length) {
+
+
     
     return null
   }

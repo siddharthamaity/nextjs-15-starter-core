@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { Doughnut } from 'react-chartjs-2';
-import { ChartData, ChartOptions } from 'chart.js';
+import type { ChartData, ChartOptions } from 'chart.js';
 
 interface Props {
   shouldRender: boolean;
@@ -10,7 +10,7 @@ interface Props {
 
 const initialData:  ChartData<'doughnut'> = {
   labels: ['Samsung'],
-  datasets: [
+datasets: [
     {
       label: 'Market Share',
       data: [0, 0], // Start with 0s for animation
