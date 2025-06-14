@@ -15,7 +15,7 @@ export function Parallax() {
   const copy = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
+    const ctx = gsap.context(() => {
       gsap.registerPlugin(ScrollTrigger);
       
       const tl = gsap.timeline({

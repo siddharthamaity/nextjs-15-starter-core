@@ -102,7 +102,7 @@ export function HeroAmir() {
             {[
               { title: "Picture preprocessing", description: "Band selection and stacking to improve spectral discrimination of important land cover categories, subsetting of the Area of Interest (AOI) to isolate the study location, and geometric correction to correct spatial distortions." },
               { title: "Two-tiered classification approach", description: "Unsupervised classification (i.e., ISODATA method) is first used to investigate intrinsic spectral clusters in the images, producing first LULC classes without the need for previous training data. Supervised categorisation follows, which is based on a wealth of fieldwork-gathered ground-truth data." },
-              { title: "The methodology's use of field verification is essential", description: "GPS-referenced land cover data is gathered by systematic ground surveys, which are used to improve classification training samples and enable a thorough post-classification accuracy evaluation." },
+              { title: "The methodology&apos;s use of field verification is essential", description: "GPS-referenced land cover data is gathered by systematic ground surveys, which are used to improve classification training samples and enable a thorough post-classification accuracy evaluation." },
               { title: "Determine spatial patterns and measure rates of LULC change", description: "A comparison evaluation of the categorised photos from 2014 and 2024 is carried out for temporal analysis. The work incorporates quasi-experimental techniques, to improve causal inference about anthropogenic drivers of land cover change." },
             ].map((item) => (
               <button key={item.title} className={styles.featureButton}>
@@ -121,7 +121,7 @@ export function HeroAmir() {
           <div>
             <Image src="/images/mangroveForest.jpg" alt="Erosion" width={300} height={200} className={styles.scopeImage} />
             <h3>Study Focus: Mangrove Ecosystems at Risk</h3>
-            <p>This research assesses land use and land cover (LULC) changes in Kampung Bagan Pasir's mangrove ecosystems from 2000 to 2025. Mangroves here are vital for coastal protection, biodiversity, and carbon storage, but face threats from urbanization, aquaculture, and natural processes. The study maps these changes using satellite data to guide sustainable management strategies.</p>
+            <p>This research assesses land use and land cover (LULC) changes in Kampung Bagan Pasir&apos;s mangrove ecosystems from 2000 to 2025. Mangroves here are vital for coastal protection, biodiversity, and carbon storage, but face threats from urbanization, aquaculture, and natural processes. The study maps these changes using satellite data to guide sustainable management strategies.</p>
           </div>
           <div>
             <Image src="/images/satellite.jpg" alt="Fishing boat" width={300} height={200} className={styles.scopeImage} />

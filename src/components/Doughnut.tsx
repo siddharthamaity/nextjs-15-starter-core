@@ -2,12 +2,13 @@
 
 import { useEffect, useState } from 'react';
 import { Doughnut } from 'react-chartjs-2';
+import { ChartData, ChartOptions } from 'chart.js';
 
 interface Props {
   shouldRender: boolean;
 }
 
-const initialData = {
+const initialData:  ChartData<'doughnut'> = {
   labels: ['Samsung'],
   datasets: [
     {
@@ -31,7 +32,7 @@ const finalData = {
   ],
 };
 
-const options = {
+const options: ChartOptions<'doughnut'> = {
   responsive: true,
   plugins: {
     title: {
@@ -68,5 +69,5 @@ export default function DoughnutChart({ shouldRender }: Props) {
     }
   }, [shouldRender]);
 
-  return <Doughnut data={chartData as any} options={options as any} />;
+  return <Doughnut data={chartData} options={options} />;
 }

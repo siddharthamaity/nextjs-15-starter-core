@@ -43,7 +43,8 @@ export function ForthParallax(){
           });
           tl.to(card1.current, {opacity: 1 }, 0)
           ScrollTrigger.refresh();
-    });
+        });
+
     return () => ctx.revert();
     }, []);
     

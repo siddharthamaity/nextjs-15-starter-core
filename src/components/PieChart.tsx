@@ -8,6 +8,8 @@ import {
   Legend
 } from 'chart.js';
 
+import { ChartOptions } from 'chart.js';
+
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const data = {
@@ -22,7 +24,7 @@ const data = {
   ],
 };
 
-const options = {  
+const options: ChartOptions<'pie'> = {  
   responsive: true,
   animation: {
     animateRotate: true,
@@ -47,5 +49,5 @@ const options = {
 };
 
 export default function PieChart({ shouldRender }: { shouldRender: boolean }) {
-  return shouldRender ? <Pie data={data} options={options as any} /> : null;
+  return shouldRender ? <Pie data={data} options={options} /> : null;
 }

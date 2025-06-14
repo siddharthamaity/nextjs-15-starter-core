@@ -7,7 +7,7 @@ export function Quizsection(){
   const parallaxRef = useRef(null);
 
     useLayoutEffect(()=>{
-        let ctx = gsap.context(() => {
+        const ctx = gsap.context(() => {
           gsap.registerPlugin(ScrollTrigger);
           
           const tl = gsap.timeline({
@@ -23,12 +23,13 @@ export function Quizsection(){
             },
           });
     })
-    })
+    });
+
   return(
     <>
       <section className={style.pageContainer}>
         <div className={style.titlediv}>
-          <h1>Let's Test your knowledge🧠</h1>
+          <h1>Let&apos;s Test your knowledge🧠</h1>
         </div>
         <div className={style.linkdiv}>
           <a href="syazwani/quiz">

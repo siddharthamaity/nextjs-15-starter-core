@@ -30,9 +30,9 @@ export function Secparallax() {
     const cityfoot2 = useRef(null);
 
     useEffect(() => {
-        let ctx = gsap.context(() =>{
+        const ctx = gsap.context(() =>{
             gsap.registerPlugin(ScrollTrigger);
-            var tl = gsap.timeline({
+            const tl = gsap.timeline({
                 defaults : {duration : 1},
                 
                 scrollTrigger: {
@@ -214,7 +214,7 @@ export function Secparallax() {
                         <div className="parent-cardies">
                             
                             <div className="cardies2" ref={p1}>
-                                <p>Welcome to a research-based exploration into how tourism management practices shape customer satisfaction at one of Malaysia's most iconic landmarks — the PETRONAS Twin Towers. This website summarizes a comprehensive study that highlights key factors influencing the visitor experience, and suggests improvements for sustainable tourism growth.</p></div>
+                                <p>Welcome to a research-based exploration into how tourism management practices shape customer satisfaction at one of Malaysia&apos;s most iconic landmarks — the PETRONAS Twin Towers. This website summarizes a comprehensive study that highlights key factors influencing the visitor experience, and suggests improvements for sustainable tourism growth.</p></div>
                             <div className="cardies3"></div>
                         </div>
 
