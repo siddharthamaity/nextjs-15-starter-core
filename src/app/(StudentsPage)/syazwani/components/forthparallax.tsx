@@ -3,7 +3,6 @@ import style from "@/app/(StudentsPage)/syazwani/components/forth.module.css"
 import MyBarChart from "@/components/barchart"
 import PieChart from '@/components/PieChart';
 import HorizontalBarChart from '@/components/HorizontalBarChart';
-import LineChart from '@/components/LineChart'
 import DoughnutChart from "@/components/Doughnut"
 import { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
