@@ -19,7 +19,8 @@ const RECOMMENDED_EXTENSIONS: string[] = [
     'ChakrounAnas.turbo-console-log',
     'codeandstuff.package-json-upgrade',
     'KnisterPeter.vscode-commitizen',
-    'yzhang.markdown-all-in-one'
+    'yzhang.markdown-all-in-one',
+    'stivo.tailwind-fold'
 ];
 
 interface ExtensionStatistics {
