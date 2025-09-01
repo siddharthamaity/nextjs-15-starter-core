@@ -20,8 +20,8 @@ Welcome to the **Next.js 15 Starter** repository! This starter template is built
 - **App Directory**
 - **System, Light & Dark Mode**
 - **Next.js Bundle Analyzer**
-- **Dockerfile** with Node.js 22.18.0 (Alpine)
-- **Dockerfile.bun** with Bun 1.2.20 (Alpine)
+- **Dockerfile** with Node.js 22.19.0 (Alpine)
+- **Dockerfile.bun** with Bun 1.2.21 (Alpine)
 
 ### 🛠️ ESLint Plugins
 
