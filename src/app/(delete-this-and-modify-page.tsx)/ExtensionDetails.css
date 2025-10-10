@@ -4,13 +4,13 @@
     margin-right: auto;
     display: grid;
     max-width: 32rem; /* 2xl max width */
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 0.75rem; /* gap-y-3 */
 }
 
 @media (min-width: 640px) {
     .extension-container {
-        grid-template-columns: repeat(9, minmax(0, 1fr));
+        grid-template-columns: repeat(8, minmax(0, 1fr));
         gap: 1.5rem; /* gap-y-6 */
     }
 }
