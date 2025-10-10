@@ -3,7 +3,6 @@ import Link from 'next/link';
 import './ExtensionDetails.css';
 
 const RECOMMENDED_EXTENSIONS: string[] = [
-    'PulkitGangwar.nextjs-snippets',
     'formulahendry.auto-close-tag',
     'aaron-bond.better-comments',
     'mikestead.dotenv',
@@ -19,8 +18,7 @@ const RECOMMENDED_EXTENSIONS: string[] = [
     'ChakrounAnas.turbo-console-log',
     'codeandstuff.package-json-upgrade',
     'KnisterPeter.vscode-commitizen',
-    'yzhang.markdown-all-in-one',
-    'stivo.tailwind-fold'
+    'yzhang.markdown-all-in-one'
 ];
 
 interface ExtensionStatistics {
