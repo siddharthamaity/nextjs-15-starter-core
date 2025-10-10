@@ -16,9 +16,7 @@ const RECOMMENDED_EXTENSIONS: string[] = [
     'esbenp.prettier-vscode', // ? https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
     'ChakrounAnas.turbo-console-log', // ? https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log
     'codeandstuff.package-json-upgrade', // ? https://marketplace.visualstudio.com/items?itemName=codeandstuff.package-json-upgrade
-    'yzhang.markdown-all-in-one', // ? https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one,
-    'bradlc.vscode-tailwindcss', // ? https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
-    'stivo.tailwind-fold' // ? https://marketplace.visualstudio.com/items?itemName=stivo.tailwind-fold
+    'yzhang.markdown-all-in-one' // ? https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
 ];
 
 interface ExtensionStatistics {
