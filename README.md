@@ -1,5 +1,7 @@
 # Next.js 15 Starter (core) [[LIVE DEMO](https://nextjs-15-starter-core.vercel.app/)]
 
+> **⚠️ ARCHIVED**: This project has been archived. Please use the [Next.js 16 Starter (core)](https://github.com/siddharthamaity/nextjs-16-starter-core) instead.
+
  ![MIT License](https://img.shields.io/badge/license-MIT-blue) [![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)](https://typescriptlang.org) ![ESLint](https://img.shields.io/badge/code%20style-eslint-brightgreen) ![GitHub stars](https://img.shields.io/github/stars/siddharthamaity/nextjs-15-starter-core?style=social) ![GitHub forks](https://img.shields.io/github/forks/siddharthamaity/nextjs-15-starter-core?style=social) [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/siddharthamaity)
 
 *This is the core version for Next.js 15 Starter, you may be interested in other templates too -*

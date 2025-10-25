@@ -11,6 +11,25 @@ export default function Home() {
         <div className='page'>
             <NavigationBar />
             <div className='main'>
+                <div
+                    style={{
+                        backgroundColor: '#fff3cd',
+                        border: '1px solid #ffc107',
+                        borderRadius: '8px',
+                        padding: '16px',
+                        marginBottom: '24px',
+                        color: '#856404'
+                    }}>
+                    <strong>⚠️ ARCHIVED:</strong> This project has been archived. Please use the{' '}
+                    <a
+                        href='https://github.com/siddharthamaity/nextjs-16-starter-core'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        style={{ color: '#004085', textDecoration: 'underline' }}>
+                        Next.js 16 Starter (core)
+                    </a>{' '}
+                    instead.
+                </div>
                 <Image className='logo' src='/next.svg' alt='Next.js logo' width={180} height={38} priority />
                 <ol>
                     <li>
